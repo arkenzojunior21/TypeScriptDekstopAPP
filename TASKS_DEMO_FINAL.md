@@ -13,7 +13,8 @@ Tujuan dokumen ini adalah membawa Laundry Desk dari prototype UI menjadi aplikas
 - [x] Frontend desktop dan web berhasil production build.
 - [x] Login dan role demo tersedia menggunakan `localStorage`.
 - [x] Dashboard, daftar pesanan, dan form pesanan demo tersedia.
-- [ ] Data demo diganti menjadi data dari API dan PostgreSQL.
+- [x] Sanctum, migration inti, seeder, dan rute API inti telah dibuat.
+- [x] Data demo fitur inti diganti menjadi data dari API dan PostgreSQL.
 
 ---
 
@@ -21,21 +22,21 @@ Tujuan dokumen ini adalah membawa Laundry Desk dari prototype UI menjadi aplikas
 
 Tujuan: Laravel dapat terhubung ke PostgreSQL dan memiliki struktur data yang benar.
 
-- [ ] Buat database PostgreSQL `laundry_desk`.
-- [ ] Atur `.env` Laravel untuk PostgreSQL lokal.
-- [ ] Pastikan tidak ada konfigurasi SQLite.
-- [ ] Tambahkan Laravel Sanctum.
-- [ ] Buat migration untuk `users` dengan role, nomor telepon, `store_id`, avatar, dan waktu login terakhir.
-- [ ] Buat migration `stores` dengan nama, alamat, telepon, latitude, longitude, pemilik, dan status.
-- [ ] Buat migration `services` dengan layanan, harga, satuan, status, dan toko.
+- [x] Buat database PostgreSQL `laundry_desk`.
+- [x] Atur `.env` Laravel untuk PostgreSQL lokal.
+- [x] Pastikan tidak ada konfigurasi SQLite.
+- [x] Tambahkan Laravel Sanctum.
+- [x] Buat migration untuk `users` dengan role, nomor telepon, `store_id`, avatar, dan waktu login terakhir.
+- [x] Buat migration `stores` dengan nama, alamat, telepon, latitude, longitude, pemilik, dan status.
+- [x] Buat migration `services` dengan layanan, harga, satuan, status, dan toko.
 - [ ] Buat migration `customers` bila pelanggan dipisahkan dari tabel pengguna, atau tetapkan relasi pelanggan pada tabel pengguna.
-- [ ] Buat migration `orders` dengan pelanggan, toko, status, berat/kuantitas, total, metode dan status pembayaran, catatan, serta waktu pesanan.
-- [ ] Buat migration detail layanan pesanan agar satu pesanan dapat memiliki lebih dari satu layanan.
-- [ ] Buat migration `complaints`.
-- [ ] Buat migration `audit_logs`.
+- [x] Buat migration `orders` dengan pelanggan, toko, status, berat/kuantitas, total, metode dan status pembayaran, catatan, serta waktu pesanan.
+- [x] Buat migration detail layanan pesanan agar satu pesanan dapat memiliki lebih dari satu layanan.
+- [x] Buat migration `complaints`.
+- [x] Buat migration `audit_logs`.
 - [ ] Tambahkan index untuk kolom pencarian dan filter: email, role, store, status, tanggal pesanan.
-- [ ] Jalankan migration dari database kosong.
-- [ ] Buat seeder data awal dan uji ulang dengan `migrate:fresh --seed`.
+- [x] Jalankan migration dari database kosong.
+- [x] Buat seeder data awal dan uji ulang dengan `migrate:fresh --seed`.
 
 Hasil tahap: database dapat dibuat ulang dari nol dengan satu perintah.
 
@@ -45,18 +46,18 @@ Hasil tahap: database dapat dibuat ulang dari nol dengan satu perintah.
 
 Tujuan: setiap peran memakai akun serta akses yang benar.
 
-- [ ] Buat endpoint register pelanggan.
-- [ ] Buat endpoint login dengan Laravel Sanctum.
-- [ ] Buat endpoint logout yang mencabut token.
-- [ ] Buat endpoint profil pengguna aktif.
+- [x] Buat endpoint register pelanggan.
+- [x] Buat endpoint login dengan Laravel Sanctum.
+- [x] Buat endpoint logout yang mencabut token.
+- [x] Buat endpoint profil pengguna aktif.
 - [ ] Buat validasi email, password, telepon, dan data profil.
-- [ ] Buat middleware role: Platform Admin, Admin Toko, Pelanggan.
-- [ ] Buat policy agar Admin Toko hanya melihat data tokonya sendiri.
-- [ ] Buat policy agar pelanggan hanya melihat pesanan dan komplain miliknya sendiri.
-- [ ] Buat redirect role pada frontend setelah login API berhasil.
+- [x] Buat middleware role: Platform Admin, Admin Toko, Pelanggan.
+- [x] Buat policy agar Admin Toko hanya melihat data tokonya sendiri.
+- [x] Buat policy agar pelanggan hanya melihat pesanan dan komplain miliknya sendiri.
+- [x] Buat redirect role pada frontend setelah login API berhasil.
 - [ ] Simpan token dengan aman: browser memakai penyimpanan lokal sementara, desktop memakai penyimpanan aman Tauri saat integrasi Tauri selesai.
-- [ ] Ganti akun demo frontend menjadi akun API.
-- [ ] Uji akun tanpa role yang tepat tidak dapat membuka rute atau API terlarang.
+- [x] Ganti akun demo frontend menjadi akun API.
+- [x] Uji akun tanpa role yang tepat tidak dapat membuka rute atau API terlarang.
 
 Hasil tahap: login dan pembatasan akses bekerja untuk tiga peran.
 
@@ -68,36 +69,36 @@ Tujuan: Admin Toko dapat menjalankan pesanan dengan data nyata.
 
 ### Toko dan lokasi
 
-- [ ] API daftar toko.
-- [ ] API detail toko.
+- [x] API daftar toko.
+- [x] API detail toko.
 - [ ] API ubah pengaturan toko milik Admin Toko.
 - [ ] API Platform Admin untuk membuat, mengubah, dan menonaktifkan toko.
-- [ ] Simpan latitude dan longitude toko.
+- [x] Simpan latitude dan longitude toko.
 
 ### Layanan dan tarif
 
-- [ ] API daftar layanan per toko.
-- [ ] API tambah layanan.
-- [ ] API ubah layanan.
+- [x] API daftar layanan per toko.
+- [x] API tambah layanan.
+- [x] API ubah layanan.
 - [ ] API aktif/nonaktif layanan.
 - [ ] API hapus layanan dengan konfirmasi aman.
 - [ ] Validasi harga, satuan kilogram/unit, dan status.
 
 ### Pelanggan
 
-- [ ] API daftar pelanggan toko dengan pencarian dan pagination.
+- [x] API daftar pelanggan toko dengan pencarian dan pagination.
 - [ ] API detail pelanggan dan riwayat pesanan.
 - [ ] API tambah dan ubah pelanggan dari desktop.
 - [ ] API hapus atau nonaktifkan pelanggan sesuai kebutuhan.
 
 ### Pesanan
 
-- [ ] API daftar pesanan dengan filter status, toko, dan rentang tanggal.
-- [ ] API detail pesanan.
-- [ ] API buat pesanan dari Admin Toko.
-- [ ] API buat pesanan dari pelanggan web.
-- [ ] Hitung subtotal dan total di server, bukan dari input frontend saja.
-- [ ] API ubah status: Baru, Proses, Siap Diambil, Dalam Perjalanan, Selesai, Dibatalkan.
+- [x] API daftar pesanan dengan filter status, toko, dan rentang tanggal.
+- [x] API detail pesanan.
+- [x] API buat pesanan dari Admin Toko.
+- [x] API buat pesanan dari pelanggan web.
+- [x] Hitung subtotal dan total di server, bukan dari input frontend saja.
+- [x] API ubah status: Baru, Proses, Siap Diambil, Dalam Perjalanan, Selesai, Dibatalkan.
 - [ ] API ubah status pembayaran: Belum Dibayar, Dibayar, Dikembalikan.
 - [ ] Buat nomor pesanan unik seperti `LD-24018`.
 - [ ] Catat perubahan status ke audit log.
@@ -111,17 +112,17 @@ Hasil tahap: seluruh data operasional utama tersimpan di PostgreSQL dan aman men
 
 Tujuan: Desktop tidak lagi memakai data contoh pada fitur utama.
 
-- [ ] Konfigurasi URL API melalui environment variable frontend.
-- [ ] Buat HTTP client dengan token Authorization.
+- [x] Konfigurasi URL API melalui environment variable frontend.
+- [x] Buat HTTP client dengan token Authorization.
 - [ ] Tambahkan TanStack Query untuk pengambilan, cache, dan pembaruan data.
 - [ ] Tambahkan Zustand hanya untuk state UI dan sesi yang diperlukan.
-- [ ] Hubungkan metrik dashboard ke endpoint laporan.
+- [x] Hubungkan metrik dashboard ke endpoint laporan.
 - [ ] Hubungkan grafik pesanan mingguan ke data API.
 - [ ] Hubungkan target pendapatan bulanan ke data toko.
 - [ ] Hubungkan aktivitas terbaru ke audit log dan pesanan terbaru.
-- [ ] Hubungkan daftar pesanan dengan pencarian, filter, pagination, dan detail.
-- [ ] Hubungkan Buat Pesanan tiga langkah ke pelanggan dan layanan nyata.
-- [ ] Hubungkan halaman pelanggan desktop ke API.
+- [~] Hubungkan daftar pesanan ke API. Pencarian, filter, pagination, dan detail masih tahap berikutnya.
+- [x] Hubungkan Buat Pesanan tiga langkah ke pelanggan dan layanan nyata.
+- [x] Hubungkan halaman pelanggan desktop ke API.
 - [ ] Hubungkan halaman layanan dan tarif ke API.
 - [ ] Tambahkan modal konfirmasi untuk tindakan hapus atau pembatalan pesanan.
 - [ ] Tambahkan toast berhasil/gagal.
@@ -181,14 +182,14 @@ Hasil tahap: semua menu utama desktop berfungsi dan memiliki data nyata.
 Tujuan: pelanggan dapat memilih toko, membuat pesanan, dan memantaunya.
 
 - [ ] Buat register dan login pelanggan memakai API.
-- [ ] Buat halaman pencarian toko.
+- [x] Buat halaman pencarian toko.
 - [ ] Minta izin lokasi perangkat dengan penanganan saat izin ditolak.
 - [ ] Tentukan penyedia peta untuk demo: Leaflet + OpenStreetMap direkomendasikan karena gratis.
 - [ ] Tampilkan penanda toko dari latitude/longitude database.
 - [ ] Hitung dan urutkan toko berdasarkan jarak pelanggan.
 - [ ] Buat fallback pencarian lokasi manual ketika GPS tidak tersedia.
-- [ ] Tampilkan layanan aktif dari toko yang dipilih.
-- [ ] Buat form pesanan pelanggan.
+- [x] Tampilkan layanan aktif dari toko yang dipilih.
+- [x] Buat form pesanan pelanggan.
 - [ ] Buat halaman ringkasan dan konfirmasi pesanan.
 - [ ] Buat halaman riwayat pesanan.
 - [ ] Buat detail dan pelacakan status pesanan.

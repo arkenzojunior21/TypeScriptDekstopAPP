@@ -6,6 +6,7 @@ export type SessionUser = {
   email: string
   role: UserRole
   storeName?: string
+  storeId?: number
 }
 
 export const roleLabel: Record<UserRole, string> = {

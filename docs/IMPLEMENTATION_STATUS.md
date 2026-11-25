@@ -20,7 +20,9 @@
 3. Login demo, penyimpanan sesi lokal, role guard, dan tujuan per peran: selesai untuk front-end.
 4. Dashboard admin, daftar pesanan, dan alur pesanan tiga langkah: selesai sebagai data demo.
 5. Web pelanggan dengan pemilihan outlet dan alur pesanan: selesai sebagai data demo.
-6. Backend Laravel 12: kerangka dan dependensi inti terpasang di `backend/laravel`.
+6. Backend Laravel 12: kerangka dan dependensi inti tersedia di `backend/laravel`.
+7. Sanctum, migration inti, seeder, middleware role, dan 19 rute API tersedia. Menunggu kredensial PostgreSQL agar migration dan seeder dapat dijalankan di database lokal.
+8. PostgreSQL sudah tersambung; seluruh migration dan seeder berjalan. Login admin serta pelanggan, pembuatan pesanan, perubahan status, dan pembatasan role sudah diuji melalui API.
 
 ## Berikutnya
 

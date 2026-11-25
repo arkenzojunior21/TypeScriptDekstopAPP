@@ -22,4 +22,11 @@ npm run dev:web
 
 Login desktop menggunakan data demo yang langsung terisi. Peran dapat dipilih melalui kotak `Masuk sebagai`. Web pelanggan mempunyai tombol masuk demo tersendiri.
 
-Backend Laravel dan PostgreSQL belum dibuat karena PHP serta Composer belum tersedia pada mesin ini. Tahap berikutnya akan mengganti data demo dan sesi `localStorage` dengan Laravel Sanctum.
+Backend memakai Laravel 12 di `backend/laravel` dan PostgreSQL. Setelah mengatur `.env` dengan kredensial PostgreSQL, jalankan:
+
+```powershell
+cd backend/laravel
+php artisan serve
+```
+
+Login demo front-end akan diganti dengan Laravel Sanctum dan data PostgreSQL pada tahap autentikasi.
