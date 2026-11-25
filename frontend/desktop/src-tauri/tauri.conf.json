@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Laundry Desk",
+  "version": "0.1.0",
+  "identifier": "com.laundrydesk.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{ "title": "Laundry Desk", "width": 1280, "height": 800, "minWidth": 1024, "minHeight": 680 }],
+    "security": { "csp": null }
+  },
+  "bundle": { "active": true, "targets": "all" }
+}

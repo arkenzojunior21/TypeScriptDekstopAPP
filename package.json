@@ -1,0 +1,16 @@
+{
+  "name": "laundry-desk",
+  "private": true,
+  "workspaces": [
+    "frontend/*"
+  ],
+  "scripts": {
+    "dev:desktop": "npm --workspace @laundry-desk/desktop run dev",
+    "dev:web": "npm --workspace @laundry-desk/web run dev",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.32",
+    "@types/react-dom": "^18.3.7"
+  }
+}

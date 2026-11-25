@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <linearGradient id="softGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#10B981" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="420" height="880" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#02110E" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="390" height="844" rx="28" fill="#071F1B"/>
+  <rect width="390" height="370" rx="28" fill="url(#softGlow)"/>
+
+  <!-- Status bar -->
+  <text x="24" y="31" fill="#E8F3EF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="650">9:41</text>
+  <g stroke="#E8F3EF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M316 25c4-4 10-4 14 0M319 28c2.5-2.5 6.5-2.5 9 0M322.5 31.5h2"/>
+    <path d="M338 23h15a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2V25a2 2 0 0 1 2-2Z"/><path d="M357 27v6"/>
+  </g>
+
+  <!-- App header -->
+  <g transform="translate(22 53)">
+    <rect width="34" height="34" rx="11" fill="#10B981"/>
+    <path d="M10 12.5 17 9l7 3.5v9l-7 3.5-7-3.5v-9Z" stroke="#04251D" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M13.5 16.5h7M17 13v7" stroke="#04251D" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <text x="66" y="68" fill="#E8F3EF" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700">LaundryKita</text>
+  <text x="66" y="82" fill="#87A49A" font-family="Inter, system-ui, sans-serif" font-size="9">BERSIH • RAPI • DEKAT</text>
+  <circle cx="352" cy="70" r="18" fill="#12372F" stroke="#24463E"/>
+  <path d="M345 70h14M352 63v14" stroke="#C7DAD3" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Step and title -->
+  <text x="24" y="126" fill="#60D6A8" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">LANGKAH 1 DARI 3</text>
+  <text x="24" y="157" fill="#F0F7F4" font-family="Inter, system-ui, sans-serif" font-size="25" font-weight="700">Pilih outlet terdekat</text>
+  <text x="24" y="179" fill="#A9BDB6" font-family="Inter, system-ui, sans-serif" font-size="12">Pilih cabang untuk melihat layanan dan jadwalnya.</text>
+
+  <!-- Location button -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="199" width="350" height="64" rx="14" fill="#12372F" stroke="#2D594D"/>
+  </g>
+  <circle cx="53" cy="231" r="18" fill="#0D2B25"/>
+  <g stroke="#62DDB0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="53" cy="230" r="7"/><path d="M53 219v4m0 14v4m11-11h-4m-14 0h-4M53 227v6l4 2"/>
+  </g>
+  <text x="82" y="227" fill="#E8F3EF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="650">Gunakan lokasi saya</text>
+  <text x="82" y="244" fill="#91AA9F" font-family="Inter, system-ui, sans-serif" font-size="10">Urutkan outlet berdasarkan jarak</text>
+  <path d="m348 227 5 5-5 5" stroke="#91AA9F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Manual location -->
+  <text x="24" y="292" fill="#A9BDB6" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Atau pilih lokasi manual</text>
+  <rect x="20" y="303" width="350" height="46" rx="11" fill="#0D2B25" stroke="#24463E"/>
+  <path d="M39 320c0-4 3-7 7-7s7 3 7 7c0 5-7 11-7 11s-7-6-7-11Z" stroke="#65D6AA" stroke-width="1.4"/>
+  <circle cx="46" cy="320" r="2" fill="#65D6AA"/>
+  <text x="64" y="331" fill="#E8F3EF" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="550">Jakarta Selatan</text>
+  <path d="m344 321 5 5 5-5" stroke="#91AA9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Outlet list -->
+  <text x="24" y="379" fill="#F0F7F4" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">Outlet di sekitar kamu</text>
+  <text x="366" y="379" text-anchor="end" fill="#91AA9F" font-family="Inter, system-ui, sans-serif" font-size="10">3 ditemukan</text>
+
+  <!-- Selected closest outlet -->
+  <rect x="20" y="393" width="350" height="112" rx="14" fill="#0D2B25" stroke="#10B981" stroke-width="1.4"/>
+  <circle cx="48" cy="421" r="15" fill="#12372F"/>
+  <path d="M41 420c0-4 3-7 7-7s7 3 7 7c0 5-7 11-7 11s-7-6-7-11Z" stroke="#69DEB2" stroke-width="1.3"/>
+  <circle cx="48" cy="420" r="2" fill="#69DEB2"/>
+  <text x="72" y="418" fill="#E8F3EF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">LaundryKita Kemang</text>
+  <rect x="275" y="405" width="77" height="23" rx="11.5" fill="#103C31"/>
+  <text x="313.5" y="420" text-anchor="middle" fill="#7DE2BB" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="650">TERDEKAT</text>
+  <text x="72" y="438" fill="#A9BDB6" font-family="Inter, system-ui, sans-serif" font-size="10">Jl. Kemang Raya No. 12</text>
+  <text x="72" y="456" fill="#78DDB4" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600">Buka · tutup 21.00</text>
+  <text x="335" y="456" text-anchor="end" fill="#DCEBE5" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="650">0,8 km</text>
+  <path d="M36 472h318" stroke="#24463E"/>
+  <circle cx="344" cy="488" r="7" fill="#10B981"/>
+  <path d="m341 488 2 2 4-4" stroke="#04251D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="38" y="492" fill="#DCEBE5" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600">Pilih outlet ini</text>
+
+  <!-- Other nearby outlets -->
+  <rect x="20" y="515" width="350" height="83" rx="13" fill="#0D2B25" stroke="#24463E"/>
+  <circle cx="48" cy="543" r="15" fill="#12372F"/>
+  <path d="M41 542c0-4 3-7 7-7s7 3 7 7c0 5-7 11-7 11s-7-6-7-11Z" stroke="#91AA9F" stroke-width="1.3"/><circle cx="48" cy="542" r="2" fill="#91AA9F"/>
+  <text x="72" y="541" fill="#E8F3EF" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="650">LaundryKita Blok M</text>
+  <text x="72" y="559" fill="#A9BDB6" font-family="Inter, system-ui, sans-serif" font-size="10">Jl. Melawai Raya No. 8</text>
+  <text x="72" y="579" fill="#78DDB4" font-family="Inter, system-ui, sans-serif" font-size="10">Buka · tutup 20.00</text>
+  <text x="350" y="579" text-anchor="end" fill="#DCEBE5" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="650">2,4 km</text>
+  <circle cx="344" cy="543" r="8" stroke="#55756A" stroke-width="1.4"/>
+
+  <rect x="20" y="608" width="350" height="83" rx="13" fill="#0D2B25" stroke="#24463E"/>
+  <circle cx="48" cy="636" r="15" fill="#12372F"/>
+  <path d="M41 635c0-4 3-7 7-7s7 3 7 7c0 5-7 11-7 11s-7-6-7-11Z" stroke="#91AA9F" stroke-width="1.3"/><circle cx="48" cy="635" r="2" fill="#91AA9F"/>
+  <text x="72" y="634" fill="#E8F3EF" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="650">LaundryKita Tebet</text>
+  <text x="72" y="652" fill="#A9BDB6" font-family="Inter, system-ui, sans-serif" font-size="10">Jl. Tebet Barat Dalam No. 5</text>
+  <text x="72" y="672" fill="#78DDB4" font-family="Inter, system-ui, sans-serif" font-size="10">Buka · tutup 21.00</text>
+  <text x="350" y="672" text-anchor="end" fill="#DCEBE5" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="650">3,1 km</text>
+  <circle cx="344" cy="636" r="8" stroke="#55756A" stroke-width="1.4"/>
+
+  <!-- Privacy note -->
+  <circle cx="28" cy="716" r="7" fill="#12372F"/>
+  <path d="M28 713v.2m0 2v3" stroke="#91AA9F" stroke-width="1.3" stroke-linecap="round"/>
+  <text x="42" y="719" fill="#91AA9F" font-family="Inter, system-ui, sans-serif" font-size="9.5">Lokasi perangkat hanya dipakai untuk mengurutkan outlet.</text>
+
+  <!-- Fixed action area -->
+  <rect x="0" y="744" width="390" height="100" fill="#071F1B"/>
+  <path d="M0 744h390" stroke="#183A32"/>
+  <rect x="20" y="761" width="350" height="50" rx="12" fill="#10B981"/>
+  <text x="195" y="791" text-anchor="middle" fill="#04251D" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="750">Lanjut pilih layanan</text>
+  <path d="m332 782 5 4-5 4" stroke="#04251D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="145" y="829" width="100" height="4" rx="2" fill="#A9BDB6" fill-opacity=".55"/>
+</svg>
